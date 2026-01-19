@@ -67,11 +67,11 @@ const Index = () => {
                     <ArrowRight className="ml-3 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="hover:bg-gray-200">
+                {/* <Button asChild size="lg" variant="outline" className="hover:bg-gray-200">
                   <Link to="/approach">
                     Our Methodology
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
