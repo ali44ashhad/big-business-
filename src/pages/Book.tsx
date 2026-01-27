@@ -14,16 +14,16 @@ const Book = () => {
                   <div className="sticky top-24 space-y-10">
                     <div>
                       <span className="inline-block px-4 py-2 bg-black text-white text-xs tracking-wider uppercase rounded-full mb-6">
-                        Initial Assessment
+                        Walk-through
                       </span>
                       <h1 className="heading-section mb-6 tracking-tight">
-                        Schedule Operational Review
+                        Book a walk-through
                       </h1>
                       <div className="h-1 w-24 bg-black mb-8" />
                       <p className="body-large text-muted-foreground mb-8 leading-relaxed">
-                        Every transformation begins with comprehensive assessment. 
-                        We conduct on-site observation, analyze operational workflows, 
-                        and identify systemic constraints.
+                        The first step is a walk-through. We meet on site with decision-makers and current
+                        operations managers to map the real situation — how work actually runs today, where it is
+                        breaking, and what needs to be brought under control.
                       </p>
                     </div>
 
@@ -34,9 +34,9 @@ const Book = () => {
                           <Calendar className="h-5 w-5 text-black" />
                         </div>
                         <div>
-                          <h3 className="font-semibold mb-2">Site Assessment</h3>
+                          <h3 className="font-semibold mb-2">On-site walk-through</h3>
                           <p className="text-sm text-muted-foreground">
-                            60-90 minute on-site review of your current operations and challenges.
+                            60–90 minute on-site review of your current operations, constraints, and safety exposure.
                           </p>
                         </div>
                       </div>
@@ -46,9 +46,9 @@ const Book = () => {
                           <MapPin className="h-5 w-5 text-black" />
                         </div>
                         <div>
-                          <h3 className="font-semibold mb-2">Location Focus</h3>
+                          <h3 className="font-semibold mb-2">Who should attend</h3>
                           <p className="text-sm text-muted-foreground">
-                            Melbourne-based with capacity for select regional engagements.
+                            Owner or director, current ops / warehouse / dispatch manager, and any key decision-makers.
                           </p>
                         </div>
                       </div>
@@ -58,9 +58,9 @@ const Book = () => {
                           <Clock className="h-5 w-5 text-black" />
                         </div>
                         <div>
-                          <h3 className="font-semibold mb-2">Follow-up Timeline</h3>
+                          <h3 className="font-semibold mb-2">What happens after</h3>
                           <p className="text-sm text-muted-foreground">
-                            Diagnostic proposal delivered within 3 business days post-assessment.
+                            Within 3 business days you receive a clear diagnostic proposal and next-step system plan.
                           </p>
                         </div>
                       </div>
@@ -68,15 +68,14 @@ const Book = () => {
 
                     {/* What to Expect */}
                     <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                      <h3 className="font-semibold mb-4">Assessment Focus Areas</h3>
+                      <h3 className="font-semibold mb-4">During the walk-through we focus on</h3>
                       <ul className="space-y-3">
                         {[
-                          "Current workflow and process mapping",
-                          "Operational constraint identification",
-                          "Safety and compliance evaluation",
-                          "Technology and system assessment",
-                          "Scalability and growth capacity",
-                          "Owner dependency analysis"
+                          "How work actually flows today — not just how it is meant to",
+                          "Dispatch, stock, safety, and labour control points",
+                          "Where systems depend on specific people to function",
+                          "Technology and tools in place and how they are being used",
+                          "Owner dependence and failure points if key people are away"
                         ].map((item, index) => (
                           <li key={index} className="flex items-start gap-3">
                             <CheckCircle className="h-4 w-4 text-black mt-0.5 flex-shrink-0" />
@@ -93,11 +92,11 @@ const Book = () => {
                   <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8 md:p-12">
                     <div className="mb-10">
                       <h2 className="text-2xl font-bold tracking-tight mb-4">
-                        Schedule Your Assessment
+                        Request a walk-through
                       </h2>
                       <p className="text-muted-foreground">
-                        Complete the form below to schedule your on-site operational review. 
-                        We'll contact you within 24 hours to confirm details.
+                        Complete the form below to request an on-site walk-through. We&apos;ll contact you within
+                        24 hours to confirm details, timing, and fit.
                       </p>
                     </div>
 
@@ -122,7 +121,7 @@ const Book = () => {
                         </div>
                         
                         <div className="flex-1">
-                          <h3 className="font-semibold mb-4">Response Time</h3>
+                          <h3 className="font-semibold mb-4">Response time</h3>
                           <p className="text-sm text-muted-foreground">
                             We respond to all enquiries within 24 hours during business days.
                           </p>

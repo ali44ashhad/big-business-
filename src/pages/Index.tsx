@@ -41,8 +41,10 @@ const Index = () => {
                   with control, safety, and visibility instead of stress and guesswork.
                 </p>
                 <div className="pt-6 space-y-4 text-white/75 border-t border-white/20">
-                  <p className="font-medium text-white/90 text-lg">The Big Business Co (BBC) works in two lanes:</p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <p className="font-medium text-white/90 text-lg">
+                    The Big Business Co (BBC) works in three lanes:
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0" />
                       <span>Trade & service businesses</span>
@@ -51,11 +53,17 @@ const Index = () => {
                       <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0" />
                       <span>Warehouses & physical operations</span>
                     </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0" />
+                      <span>Businesses with existing operations staff</span>
+                    </div>
                   </div>
                   <div className="pt-4 space-y-2 italic text-white">
                     <p>We don’t sell software.</p>
                     <p>We don’t give advice.</p>
-                    <p className="font-semibold not-italic">We design and install the systems that make businesses actually work.</p>
+                    <p className="font-semibold not-italic">
+                      We design and install the systems that make businesses actually work.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -148,14 +156,14 @@ const Index = () => {
         <div className="container-industrial">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="heading-section mb-6 tracking-tight">Our Two Lanes</h2>
+              <h2 className="heading-section mb-6 tracking-tight">Our Three Lanes</h2>
               <div className="h-px w-24 bg-foreground mx-auto mb-8" />
               <p className="body-large text-muted-foreground max-w-2xl mx-auto">
                 Specialized installation for distinct business models
               </p>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Trades Card */}
               <Link 
                 to="/trades" 
@@ -231,6 +239,51 @@ const Index = () => {
                   <p className="text-sm font-semibold mb-6 text-foreground italic">Typical outcomes: safer sites, faster throughput, fewer errors, stronger operational control.</p>
                   <div className="inline-flex items-center text-black font-medium group-hover:gap-4 transition-all gap-2">
                     <span>Explore Warehouse Solutions</span>
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+
+              {/* Embedded Ops Card */}
+              <Link
+                to="/embedded-ops"
+                className="group bg-white p-10 rounded-2xl border border-gray-200 hover:border-black transition-all duration-300 hover:shadow-xl"
+              >
+                <div className="mb-8">
+                  <span className="inline-block px-4 py-1.5 bg-black text-white text-xs tracking-wider uppercase rounded-full mb-4">
+                    Lane Three
+                  </span>
+                  <h3 className="heading-subsection mb-6">
+                    Businesses With Existing Ops Staff
+                  </h3>
+                  <p className="body-text text-muted-foreground mb-8 leading-relaxed">
+                    We embed structure into businesses that already have operations or warehouse staff — without
+                    removing people or starting over.
+                  </p>
+                </div>
+
+                <div className="space-y-4 mb-10">
+                  {[
+                    "Manager is experienced, but there’s no clear system",
+                    "Dispatch and stock are person-dependent",
+                    "Safety and WHS are fragmented or reactive",
+                    "Invoicing or freight flow is disconnected from daily ops",
+                    "The owner still ends up managing from above",
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0" />
+                      <span className="text-sm text-muted-foreground">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="border-t border-gray-200 pt-8">
+                  <p className="text-sm font-semibold mb-6 text-foreground italic">
+                    Typical outcomes: a manager empowered by a system, owner independence, and scalable operational
+                    control.
+                  </p>
+                  <div className="inline-flex items-center text-black font-medium group-hover:gap-4 transition-all gap-2">
+                    <span>Explore Embedded Ops Solutions</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </div>
                 </div>

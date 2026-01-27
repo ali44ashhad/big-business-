@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Trades from "./pages/Trades";
 import Warehouses from "./pages/Warehouses";
+import EmbeddedOps from "./pages/EmbeddedOps";
 import Book from "./pages/Book";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
@@ -54,6 +55,7 @@ const AppContent = () => {
         <Route path="/" element={<Index />} />
         <Route path="/trades" element={<Trades />} />
         <Route path="/warehouses" element={<Warehouses />} />
+        <Route path="/embedded-ops" element={<EmbeddedOps />} />
         <Route path="/book" element={<Book />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

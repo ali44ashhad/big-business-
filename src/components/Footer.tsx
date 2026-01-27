@@ -29,6 +29,9 @@ const Footer = () => {
               <Link to="/warehouses" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm">
                 Warehouses
               </Link>
+              <Link to="/embedded-ops" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm">
+                Embedded Ops
+              </Link>
               <Link to="/book" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm">
                 Book a walk-through
               </Link>
@@ -45,7 +48,7 @@ const Footer = () => {
                 href=" https://thebigbusinessco.com.au" 
                 className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
               >
-                thebigbusinessco.com.au
+                 luke@thebigbusinessco.com.au
               </a>
               <span className="text-primary-foreground/60">Melbourne, VIC</span>
             </div>
