@@ -39,12 +39,11 @@ const BookingForm = () => {
       if (!serviceId || !templateId || !publicKey) {
         toast.error("Email service is not configured.");
         setIsSubmitting(false);
-        console.log("SERVICE:", serviceId);
-        console.log("TEMPLATE:", templateId);
-        console.log("PUBLIC:", publicKey);
-
         return;
       }
+      console.log("SERVICE:", serviceId);
+      console.log("TEMPLATE:", templateId);
+      console.log("PUBLIC:", publicKey);
 
       await emailjs.send(
         serviceId,
