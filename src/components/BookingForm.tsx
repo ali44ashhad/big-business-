@@ -128,13 +128,13 @@ const BookingForm = () => {
         <div>
           <Label>Business Size *</Label>
           <Select onValueChange={(v) => handleChange("businessSize", v)}>
-            <SelectTrigger><SelectValue placeholder="Select size" /></SelectTrigger>
+            <SelectTrigger><SelectValue placeholder="Select size" className="text-gray-100" /></SelectTrigger>
             <SelectContent>
-              <SelectItem value="1-5">1-5</SelectItem>
-              <SelectItem value="6-15">6-15</SelectItem>
-              <SelectItem value="16-30">16-30</SelectItem>
-              <SelectItem value="31-50">31-50</SelectItem>
-              <SelectItem value="50+">50+</SelectItem>
+              <SelectItem value="1-5">1-5 Employees</SelectItem>
+              <SelectItem value="6-15">6-15 Employees</SelectItem>
+              <SelectItem value="16-30">16-30 Employees</SelectItem>
+              <SelectItem value="31-50">31-50 Employees</SelectItem>
+              <SelectItem value="50+">50+ Employees</SelectItem>
             </SelectContent>
           </Select>
         </div>

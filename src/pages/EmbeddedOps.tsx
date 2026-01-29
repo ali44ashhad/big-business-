@@ -1,55 +1,66 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Workflow, ClipboardList, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import embedded from "../assets/embeded.png"
 
 const EmbeddedOps = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       {/* Hero / Intro */}
       <section className="">
-        <div className="relative min-h-[60vh] flex items-center overflow-hidden bg-black">
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/95 to-black/85" />
+  {/* Container maintains relative positioning */}
+  <div className="relative min-h-[60vh] flex items-center overflow-hidden bg-black">
+    
+    {/* The Background Image Tag */}
+    <img 
+      src={embedded} 
+      alt="Industrial Warehouse Operations"
+      className="absolute inset-0 w-full h-full object-cover opacity-60"
+    />
 
-          <div className="container-industrial relative z-10 py-20 md:py-28">
-            <div className="max-w-4xl">
-              <div className="mb-10">
-                <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs tracking-wider uppercase rounded-full mb-6">
-                  Lane Three
-                </span>
-                <h1 className="heading-hero text-white mb-6 tracking-tight">
-                  Businesses With Existing Ops Staff
-                </h1>
-                <div className="h-1 w-24 bg-white mb-8" />
-                <p className="text-xl md:text-2xl font-light text-white/90 mb-6 leading-relaxed">
-                  We embed structure into businesses that already have operations or warehouse staff — without
-                  removing people or starting over.
-                </p>
-              </div>
+    {/* The Gradient Overlay (Ensures text remains readable) */}
+    <div className="absolute inset-0 bg-black/80 z-10" />
 
-              <div className="space-y-4 text-white/80 body-large max-w-2xl">
-                <p>
-                  This lane is for businesses with an ops, warehouse, or dispatch manager in place — but where the
-                  system is still in people&apos;s heads, not in the business itself.
-                </p>
-              </div>
-
-              <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <Button
-                  asChild
-                  size="lg"
-                  variant="secondary"
-                  className="bg-white text-black hover:bg-white/90"
-                >
-                  <Link to="/book" className="flex items-center">
-                    Book a walk-through
-                    <ArrowRight className="ml-3 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
+    <div className="container-industrial relative z-20 py-20 md:py-28">
+      <div className="max-w-4xl">
+        <div className="mb-10">
+          <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs tracking-wider uppercase rounded-full mb-6">
+            Lane Three
+          </span>
+          <h1 className="heading-hero text-white mb-6 tracking-tight">
+            Businesses With Existing Ops Staff
+          </h1>
+          <div className="h-1 w-24 bg-white mb-8" />
+          <p className="text-xl md:text-2xl font-light text-white/90 mb-6 leading-relaxed">
+            We embed structure into businesses that already have operations or warehouse staff — without
+            removing people or starting over.
+          </p>
         </div>
-      </section>
+
+        <div className="space-y-4 text-white/80 body-large max-w-2xl">
+          <p>
+            This lane is for businesses with an ops, warehouse, or dispatch manager in place — but where the
+            system is still in people&apos;s heads, not in the business itself.
+          </p>
+        </div>
+
+        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <Button
+            asChild
+            size="lg"
+            variant="secondary"
+            className="bg-white text-black hover:bg-white/90"
+          >
+            <Link to="/book" className="flex items-center">
+              Book a walk-through
+              <ArrowRight className="ml-3 h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Common Problems We See */}
       <section className="section-spacing bg-white py-24">
